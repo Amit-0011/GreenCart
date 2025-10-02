@@ -28,10 +28,11 @@ const Cart = () => {
             if (data.addresses.length > 0) {
                 setSelectedAddress(data.addresses[0])
             } else {
-                toast.error(data.message)
+                toast.error(data.message || "No addresses found")
             }
         } catch (error) {
-            toast.error(error.message)
+            const errorMessage = error.response?.data?.message || error.message || "Failed to load addresses"
+            toast.error(errorMessage)
         }
     }
 
@@ -84,8 +85,8 @@ const Cart = () => {
                 }
             }
         } catch (error) {
-        toast.error(error.message)
-            
+            const errorMessage = error.response?.data?.message || error.message || "Failed to place order"
+            toast.error(errorMessage)
         }
     }
 
