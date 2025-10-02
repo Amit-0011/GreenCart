@@ -28,7 +28,7 @@ const Cart = () => {
             if (data.addresses.length > 0) {
                 setSelectedAddress(data.addresses[0])
             } else {
-                toast.error(data.message || "No addresses found")
+                // toast.error(data.message  || "No addresses found")
             }
         } catch (error) {
             const errorMessage = error.response?.data?.message || error.message || "Failed to load addresses"
