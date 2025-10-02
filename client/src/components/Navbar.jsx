@@ -40,7 +40,7 @@ const Navbar = () => {
 
             {/* Desktop Menu */}
             <div className="hidden sm:flex items-center gap-8">
-                <a href="#" target="_blank" className="border border-gray-200 px-3 text-xs py-1 rounded-full text-gray-500">Seller Dashboard</a>
+                <button onClick={()=> navigate('/seller')} class="border border-gray-300 px-3 py-1 rounded-full text-xs cursor-pointer opacity-80">Seller Dashboard</button>
                 <NavLink to='/'>Home</NavLink>
                 <NavLink to='/products'>All Product</NavLink>
                 {/* <NavLink to='/'>Contact</NavLink> */}
