@@ -149,7 +149,7 @@ GreenCart/
 
 ---
 
-## ⚙️ Environment Variables (Redesigned)
+## ⚙️ Environment Variables
 
 Create a `.env` file inside **server/**:
 
@@ -185,9 +185,6 @@ CLOUDINARY_API_SECRET=your_api_secret
 STRIPE_SECRET_KEY=your_stripe_secret
 STRIPE_WEBHOOK_SECRET=your_stripe_webhook_secret
 ```
-
-⚠️ **Never commit `.env` files to GitHub.**
-
 ---
 
 ## 🚀 Getting Started
